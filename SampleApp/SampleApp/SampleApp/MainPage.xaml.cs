@@ -13,9 +13,26 @@ namespace SampleApp
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
+        public const string InitSDK = "InitSDK";
         public MainPage()
         {
             InitializeComponent();
+            SizeChanged += MainPage_SizeChanged;
         }
+
+        private async void MainPage_SizeChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(App.Paras))
+            {
+                App.Paras = string.Empty;
+                await Navigation.PushAsync(new SecondPage());
+            }
+        }
+
+        private void InitBtn_Clicked(object sender, EventArgs e)
+        {
+            MessagingCenter.Send(new object(), InitSDK);
+        }
+
     }
 }

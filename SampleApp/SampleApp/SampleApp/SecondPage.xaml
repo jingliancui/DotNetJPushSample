@@ -4,11 +4,12 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="SampleApp.MainPage">
-
-    <StackLayout>
-        <Label>超过10秒未完成初始化会被设备kill掉，触发timeout publishing content providers</Label>
-        <Button x:Name="InitBtn" Text="初始化SDK" Clicked="InitBtn_Clicked"></Button>
-    </StackLayout>
-
+             x:Class="SampleApp.SecondPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>

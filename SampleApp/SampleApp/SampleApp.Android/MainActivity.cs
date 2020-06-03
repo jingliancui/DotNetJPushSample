@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Xamarin.Forms;
 
 namespace SampleApp.Droid
 {
@@ -19,15 +20,17 @@ namespace SampleApp.Droid
 
             base.OnCreate(savedInstanceState);
             
-#if DEBUG
-            CN.Jpush.Android.Api.JPushInterface.SetDebugMode(true);
-#endif
-            CN.Jpush.Android.Api.JPushInterface.Init(this);
-
-
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
-            LoadApplication(new App());
+            LoadApplication(new App());            
+
+            MessagingCenter.Subscribe<object>(this, MainPage.InitSDK, o => 
+            {
+#if DEBUG
+                CN.Jpush.Android.Api.JPushInterface.SetDebugMode(true);
+#endif
+                CN.Jpush.Android.Api.JPushInterface.Init(this);
+            });
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {

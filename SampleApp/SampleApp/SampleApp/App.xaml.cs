@@ -6,11 +6,13 @@ namespace SampleApp
 {
     public partial class App : Application
     {
+        public static string Paras;
+
         public App()
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()

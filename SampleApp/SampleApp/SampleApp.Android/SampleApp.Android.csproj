@@ -45,7 +45,7 @@
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
   </PropertyGroup>
   <PropertyGroup>
-    <AndroidManifestPlaceholders>JPUSH_PKGNAME=com.companyname.sampleapp;JPUSH_APPKEY=b03453ae7014d593f4d182e7;JPUSH_CHANNEL=developer-default;</AndroidManifestPlaceholders>
+    <AndroidManifestPlaceholders>JPUSH_PKGNAME=com.companyname.sampleapp;JPUSH_APPKEY=你申请到的key;JPUSH_CHANNEL=developer-default;</AndroidManifestPlaceholders>
   </PropertyGroup>
   <PropertyGroup>
     <AndroidManifestMerger>manifestmerger.jar</AndroidManifestMerger>

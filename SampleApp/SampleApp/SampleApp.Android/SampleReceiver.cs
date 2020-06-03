@@ -11,6 +11,7 @@ using Android.Views;
 using Android.Widget;
 using CN.Jpush.Android.Api;
 using CN.Jpush.Android.Service;
+using Xamarin.Forms.Platform.Android;
 
 namespace SampleApp.Droid
 {
@@ -26,6 +27,12 @@ namespace SampleApp.Droid
     })]
     public class SampleReceiver : JPushMessageReceiver
     {
+        public override void OnNotifyMessageOpened(Context p0, NotificationMessage p1)
+        {
+            base.OnNotifyMessageOpened(p0, p1);
+
+            App.Paras = p1.NotificationExtras;            
+        }
     }
     
 }
