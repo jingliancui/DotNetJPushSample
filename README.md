@@ -3,6 +3,8 @@ Sample for showing JPush on xamarin.forms
 
 Tutorial:
 
+https://mp.weixin.qq.com/s/OBOTeZi51Dvs7xXGuZq6OQ
+
 https://mp.weixin.qq.com/s/_eKMrLPbuFxo6NgBpboAbQ
 
 Detail of tutorial at ZhiHu
