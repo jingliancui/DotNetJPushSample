@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SampleApp.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label>超过10秒未完成初始化会被设备kill掉，触发timeout publishing content providers</Label>
+            <Button x:Name="InitBtn" Text="初始化SDK" Clicked="InitBtn_Clicked"></Button>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
