@@ -1,4 +1,4 @@
-# XamarinFormsJPushSample
+# DotNetJPushSample
 Sample for showing JPush on xamarin.forms 
 
 Tutorial:
