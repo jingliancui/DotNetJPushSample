@@ -15,11 +15,15 @@ https://zhuanlan.zhihu.com/p/593705411
 
 https://zhuanlan.zhihu.com/p/136642814
 
-QQ Group:313308215
+QQ Group:
+
+521288080
+
+313308215
 
 WeChat Official Account(微信公众号):
 
-Xamarin Library
+MAUI Library
 
 <img src="https://github.com/jingliancui/DotNetJPushSample/blob/master/Images/wechatqrcode.jpg?raw=true"/>
 
