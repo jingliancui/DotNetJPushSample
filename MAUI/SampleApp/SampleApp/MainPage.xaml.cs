@@ -10,10 +10,9 @@ public partial class MainPage : ContentPage
     private void InitBtn_Clicked(object sender, EventArgs e)
     {
 #if ANDROID
-        var activity = Microsoft.Maui.ApplicationModel.Platform.CurrentActivity;
+        var activity = Platform.CurrentActivity;
         CN.Jpush.Android.Api.JPushInterface.SetDebugMode(true);
         CN.Jpush.Android.Api.JPushInterface.Init(activity);
 #endif
     }
 }
-

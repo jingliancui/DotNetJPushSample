@@ -5,13 +5,10 @@
 
     <ScrollView>
         <VerticalStackLayout
-            Spacing="25"
             Padding="30,0"
-            VerticalOptions="Center">
-
+            Spacing="25">
             <Label>超过10秒未完成初始化会被设备kill掉，触发timeout publishing content providers</Label>
             <Button x:Name="InitBtn" Text="初始化SDK" Clicked="InitBtn_Clicked"></Button>
-
         </VerticalStackLayout>
     </ScrollView>
 

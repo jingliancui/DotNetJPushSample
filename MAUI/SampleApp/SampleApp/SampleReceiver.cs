@@ -1,5 +1,4 @@
-﻿#if ANDROID
-using Android.Content;
+﻿using Android.Content;
 using CN.Jpush.Android.Service;
 using System;
 using System.Collections.Generic;
@@ -10,10 +9,10 @@ using System.Threading.Tasks;
 namespace SampleApp
 {
     [BroadcastReceiver(Enabled = true, Exported = false, Name = "com.companyname.sampleapp.SampleReceiver")]
-    [Android.App.IntentFilter(new string[]
-    {
+    [Android.App.IntentFilter(
+    [
         "cn.jpush.android.intent.RECEIVE_MESSAGE",
-    },
+    ],
     Categories = new string[]
     {
         "com.companyname.sampleapp"
@@ -22,4 +21,3 @@ namespace SampleApp
     {
     }
 }
-#endif
